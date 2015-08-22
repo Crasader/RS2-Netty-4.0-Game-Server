@@ -2,6 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="deps/netty-all-4.0.30.Final.jar"/>
+	<classpathentry kind="lib" path="deps/netty-all-4.0.30.Final.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Project_X/git/Netty-4.0-Game-Server/deps/netty-all-4.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="deps/netty-all-4.0.30.Final-javadoc.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
