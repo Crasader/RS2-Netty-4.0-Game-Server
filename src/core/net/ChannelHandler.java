@@ -1,3 +1,4 @@
+package core.net;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
@@ -10,12 +11,12 @@ public class ChannelHandler extends ChannelInboundHandlerAdapter {
 	
 	@Override
 	public void channelRegistered(ChannelHandlerContext ctx) {
-		
+		System.out.println("User Connected: " + ctx.channel().remoteAddress());
 	}
 	
 	@Override
 	public void channelUnregistered(ChannelHandlerContext ctx) {
-		
+		System.out.println("[DEREGISTERED] : " + ctx.channel().remoteAddress());
 	}
 	
 	@Override
@@ -30,7 +31,6 @@ public class ChannelHandler extends ChannelInboundHandlerAdapter {
 	
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object message) {
-		
-	}
-	
+		System.out.println("Message from: " + ctx.channel().remoteAddress() + " Message: " + message);
+	}	
 }

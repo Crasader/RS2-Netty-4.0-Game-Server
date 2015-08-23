@@ -1,6 +1,10 @@
+package core;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import core.net.ChannelHandler;
+import core.net.NetworkConstants;
+import core.net.ServiceChannelInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
@@ -68,6 +72,5 @@ public class Server {
 			workerGroup.shutdownGracefully();
 			bossGroup.shutdownGracefully();
 		}
-	}
-	
+	}	
 }
