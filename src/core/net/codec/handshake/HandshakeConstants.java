@@ -1,4 +1,4 @@
-package core.net;
+package core.net.codec.handshake;
 
 /**
  * Holds handshake-related constants.

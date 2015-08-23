@@ -1,4 +1,4 @@
-package core.net;
+package core.net.codec.handshake;
 
 /**
  * A handshake message in the service handshake protocol.

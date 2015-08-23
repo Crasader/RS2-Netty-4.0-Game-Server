@@ -1,4 +1,4 @@
-package core.net;
+package core.net.codec.handshake;
 
 import java.util.List;
 import java.util.logging.Logger;

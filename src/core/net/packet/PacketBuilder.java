@@ -1,7 +1,7 @@
 package core.net.packet;
 
-import core.net.ByteOrder;
-import core.net.ValueType;
+import core.net.codec.game.ByteOrder;
+import core.net.codec.game.ValueType;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 

@@ -1,4 +1,4 @@
-package core.net;
+package core.net.codec.game;
 
 /**
  * The enumerated type whose values represent the possible custom RuneScape
@@ -9,8 +9,20 @@ package core.net;
  * @author blakeman8192
  */
 public enum ValueType {
+	/**
+	 * No transformation is done.
+	 */
     STANDARD,
+	/**
+	 * Adds 128 to the value when it is written, takes 128 from the value when it is read (also known as type-A).
+	 */
     A,
+	/**
+	 * Negates the value (also known as type-C).
+	 */
     C,
+	/**
+	 * Subtracts the value from 128 (also known as type-S).
+	 */
     S
 }

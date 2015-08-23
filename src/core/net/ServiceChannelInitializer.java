@@ -3,6 +3,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import core.game.util.LoggerUtils;
+import core.net.codec.handshake.HandshakeDecoder;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
