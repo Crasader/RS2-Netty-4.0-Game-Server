@@ -26,5 +26,10 @@ public class NetworkConstants {
      * instance from the attribute map of a {@link Channel}.
      */
     public static final AttributeKey<PlayerIO> SESSION_KEY = AttributeKey.valueOf("session.KEY");
+    
+	/**
+	 * The number of seconds before a connection becomes idle.
+	 */
+	public static final int IDLE_TIME = 15;
 	
 }

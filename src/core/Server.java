@@ -2,6 +2,7 @@ package core;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import core.game.util.LoggerUtils;
 import core.net.ChannelHandler;
 import core.net.NetworkConstants;
 import core.net.ServiceChannelInitializer;
@@ -22,8 +23,7 @@ public class Server {
 	/**
 	 * Logging system used to log messages for the server
 	 */
-	private static final Logger logger = Logger.getLogger(Server.class
-			.getName());
+	private static final Logger logger = LoggerUtils.getLogger(Server.class);
 
 	/**
 	 * Main method for the server application
